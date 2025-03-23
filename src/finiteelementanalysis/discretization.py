@@ -461,10 +461,12 @@ def D2_nn3_tri_dxi(xi: np.ndarray) -> np.ndarray:
       to compute the strain-displacement matrix (B-matrix).
     """
     dN_dxi = np.zeros((3, 2))
-    dN_dxi[0, 0] = 1.0  # dN1/dξ
-    dN_dxi[1, 1] = 1.0  # dN2/dη
-    dN_dxi[2, 0] = -1.0  # dN3/dξ
-    dN_dxi[2, 1] = -1.0  # dN3/dη
+    dN_dxi[0, 0] = -1.0
+    dN_dxi[0, 1] = -1.0
+    dN_dxi[1, 0] = 1.0
+    dN_dxi[1, 1] = 0.0
+    dN_dxi[2, 0] = 0.0
+    dN_dxi[2, 1] = 1.0
     return dN_dxi
 
 
