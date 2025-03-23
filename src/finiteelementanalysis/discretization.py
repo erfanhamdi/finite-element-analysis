@@ -424,9 +424,9 @@ def D2_nn3_tri(xi: np.ndarray) -> np.ndarray:
       to interpolate values within a triangular element.
     """
     N = np.zeros((3, 1))
-    N[0, 0] = xi[0]
-    N[1, 0] = xi[1]
-    N[2, 0] = 1.0 - xi[0] - xi[1]
+    N[0, 0] = 1.0 - xi[0] - xi[1]
+    N[1, 0] = xi[0]
+    N[2, 0] = xi[1]
     return N
 
 
