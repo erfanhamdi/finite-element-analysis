@@ -501,13 +501,14 @@ def D2_nn6_tri(xi: np.ndarray) -> np.ndarray:
       to interpolate field variables within a **quadratic triangular element**.
     """
     N = np.zeros((6, 1))
-    xic = 1.0 - xi[0] - xi[1]  # Complementary coordinate (ξ_c)
-    N[0, 0] = (2.0 * xi[0] - 1.0) * xi[0]
-    N[1, 0] = (2.0 * xi[1] - 1.0) * xi[1]
-    N[2, 0] = (2.0 * xic - 1.0) * xic
-    N[3, 0] = 4.0 * xi[0] * xi[1]
-    N[4, 0] = 4.0 * xi[1] * xic
-    N[5, 0] = 4.0 * xic * xi[0]
+    x = xi[0]
+    y = xi[1]
+    N[0, 0] = 2.0 * x **2 + 4.0 * x * y - 3.0 * x + 2.0 * y **2 - 3.0 * y + 1.0
+    N[1, 0] = x * (2.0 * x - 1.0)
+    N[2, 0] = y * (2.0 * y - 1.0)
+    N[3, 0] = 4.0 * x * y
+    N[4, 0] = 4.0 * y * (1.0 - x - y)
+    N[5, 0] = 4.0 * x * (1.0 - x - y)
     return N
 
 
