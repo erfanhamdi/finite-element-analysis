@@ -35,4 +35,4 @@ pip install -e .
 ```bash
 pytest -v --cov=finiteelementanalysis --cov-report term-missing
 ```
-
+## Find the tutorial home work in tutorials directory under the name of `tutorial_hw.ipynb`
