@@ -7,7 +7,12 @@
 [![codecov](https://codecov.io/gh/Lejeune-Lab-Graduate-Course-Materials/finite-element-analysis/graph/badge.svg?token=p5DMvJ6byO)](https://codecov.io/gh/Lejeune-Lab-Graduate-Course-Materials/finite-element-analysis)
 [![tests](https://github.com/Lejeune-Lab-Graduate-Course-Materials/finite-element-analysis/actions/workflows/tests.yml/badge.svg)](https://github.com/Lejeune-Lab-Graduate-Course-Materials/finite-element-analysis/actions)
 
-
+### Code overview
+This overview is based on the toy example code 1 in tutorials.
+The high-level overview of the function calls and inputs using the toy example `tutorials/full_code_example_1.py` as the entry point.
+![main script](figs/code%20map-01.png)
+And the overview diagram of the solver function can be seen in:
+![solver script](figs/code%20map-03.png)
 ### Conda environment, install, and testing
 
 Note: this is an extremely minimalist readme, but the code is highly documented and will get built out over the coures of assignment 3.
