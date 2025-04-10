@@ -7,10 +7,13 @@
 [![codecov](https://codecov.io/gh/Lejeune-Lab-Graduate-Course-Materials/finite-element-analysis/graph/badge.svg?token=p5DMvJ6byO)](https://codecov.io/gh/Lejeune-Lab-Graduate-Course-Materials/finite-element-analysis)
 [![tests](https://github.com/Lejeune-Lab-Graduate-Course-Materials/finite-element-analysis/actions/workflows/tests.yml/badge.svg)](https://github.com/Lejeune-Lab-Graduate-Course-Materials/finite-element-analysis/actions)
 ### Assignment 3-4
+#### Part A
 [tutorials/partA.ipynb](tutorials/partA.ipynb)
 
 Here I have compared the analytical solution and the FEM analysis of a simply supported beam under distributed load
+![simple supported beam](figs/partA.png)
 
+#### Part B
 [tutorials/partB.ipynb](tutorials/partB.ipynb)
 
 In this tutorial I have done the h-refinement and p-refinement on the same problem but with large deformation.
@@ -18,7 +21,7 @@ In this tutorial I have done the h-refinement and p-refinement on the same probl
 
 [tutorials/partC.py](tutorials/partC.py)
 
-In this example I tried to implement an example of applying a point force on the face of the element of a beam to simulate a clamped beam under a point load. Here I am expecting the FEM to be very sensitive to the mesh size. Work in progress.
+In this example I tried to implement an example of applying a point force on the face of the element of a beam to simulate a clamped beam under a point load. Here I am expecting the FEM to be very sensitive to the mesh size on the point load location.
 
 ### Code overview
 This overview is based on the toy example code 1 in tutorials.
